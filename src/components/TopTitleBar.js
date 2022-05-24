@@ -11,9 +11,11 @@ function TopTitleBar(props) {
 
                 </nav>
 
-                <div className='px-4 py-2 bg-slate-100 dark:bg-slate-800 text-amber-600 dark:text-amber-200 font-semibold'>
-                    <h4 className="text-2xl">{props.children}</h4>
-                </div>
+                {props.children ? 
+                    <div className='px-4 py-2 bg-slate-100 dark:bg-slate-800 text-amber-600 dark:text-amber-200 font-semibold'>
+                        <h4 className="text-2xl">{props.children}</h4>
+                    </div>
+                : <div></div>}
 
             </header>
     )
