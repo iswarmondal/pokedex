@@ -2,4 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* devider of pokemon page */
+.curved-devider{
+    height: 5vh;
+    border-radius: 0 0 100% 100%;
+}
+.pokemon-info{
+    border-radius: 1rem 1rem 0 0;
+}
