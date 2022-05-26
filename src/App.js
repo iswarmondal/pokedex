@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Dashboard from './pages/Dashboard'
 import Pokemon from './pages/Pokemon';
+import Search from './pages/Search';
 
 function App() {
   return (
@@ -10,26 +11,27 @@ function App() {
           <Route path='/' element={<Dashboard />} />
           <Route path='/pokemon' element={<Pokemon pokemonData={
             {
-              "abilities": [
-                {
-                "ability": {
-                "name": "overgrow",
-                "url": "https://pokeapi.co/api/v2/ability/65/"
+                "abilities": [
+                  {
+                    "ability": {
+                  "name": "overgrow",
+                  "url": "https://pokeapi.co/api/v2/ability/65/"
                 },
                 "is_hidden": false,
                 "slot": 1
-                },
-                {
+              },
+              {
                 "ability": {
-                "name": "chlorophyll",
-                "url": "https://pokeapi.co/api/v2/ability/34/"
+                  "name": "chlorophyll",
+                  "url": "https://pokeapi.co/api/v2/ability/34/"
                 },
                 "is_hidden": true,
                 "slot": 3
-                }
-                ],
-            }
-          } />} />
+              }
+            ],
+          }
+        } />} />
+        <Route path='/search' element={<Search />} />
         </Routes>
       </main>
     </>

@@ -9,3 +9,19 @@
 .pokemon-info{
     border-radius: 1rem 1rem 0 0;
 }
+
+.search-box-div-animation{
+    animation: expand forwards 500ms ease-in-out;
+}
+
+/* animations */
+@keyframes expand {
+    0% {
+        width: 25%;
+    }
+    100% {
+        top: 5%;
+        width: 80%;
+        content: none;
+    }
+}
